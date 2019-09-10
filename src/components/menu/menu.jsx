@@ -7,7 +7,7 @@ export default function Menu({menuItems}) {
         <>
         {menuItems.length && (
         <header class="header">
-            <a href="" class="logo">CSS Nav</a>
+            <a href="" class="logo">kiwipower</a>
             <input class="menu-btn" type="checkbox" id="menu-btn" />
             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
             <ul class="menu">
