@@ -7,6 +7,7 @@ const Home = () => {
     return (
         <>
         <Menu menuItems={['Green Energy', 'About', 'Careers', 'Contact Us']}/>
+                <h2>Current mix of energy generation in the UK</h2>
         <Chart />
         </>
     )
