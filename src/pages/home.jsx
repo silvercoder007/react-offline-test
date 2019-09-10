@@ -4,7 +4,7 @@ import Menu from '../components/menu.jsx';
 
 const Home = () => {
     return (
-        <Menu />
+        <Menu menuItems={['Green Energy', 'About', 'Careers', 'Contact Us']}/>
     )
 
 };
