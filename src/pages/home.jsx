@@ -1,6 +1,12 @@
 import React from 'react';
+import Menu from '../components/menu.jsx';
 
-const Home = () => <h1>Hello World!</h1>;
+const Home = () => {
+    return (
+        <Menu />
+    )
+
+};
 
 
 export default Home;
