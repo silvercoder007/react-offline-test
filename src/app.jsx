@@ -1,22 +1,16 @@
 import React from 'react';
 import Home from './pages/home.jsx';
+import useFetch from './helpers/fetch.jsx';
 
-//fetching the data using native JS fetch
+export function App() {
+const res = useFetch('https://api.carbonintensity.org.uk/generation', {});
+  if (!res.response) {
+    return <div>Loading...</div>
+  }
 
-let energyData = {};
+  console.log('res', res.response.data);
 
-fetch('https://api.carbonintensity.org.uk/generation') // Call the fetch function passing the url of the API as a parameter
-.then((resp) => resp.json())
-.then(function(data) {
-    console.log(data.data);
-    energyData = data.data;
-})
-.catch(function(error) {
-    console.log(error);
-  });
-
-const App = () => <Home data={energyData}/>;
-
-export {
-    App
+    return (
+     <Home />
+    )
 }

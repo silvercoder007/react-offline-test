@@ -72,9 +72,9 @@ export default class Chart extends Component {
 
 
   render() {
-   console.log(this.props.data);
-   const temp = this.props.data;
-   console.log('temp', temp.data);
+//    console.log(this.props.data);
+//    const temp = this.props.data;
+//    console.log('temp', temp.data);
     return (
     <section>
       <LineChart
