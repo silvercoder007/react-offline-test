@@ -1,6 +1,6 @@
 # React Offline Test
 
-* Hello, this is my solution to the kiwipower technical test"
+* Hello, this is my solution to the kiwipower technical test
 * I had a fun few hours writing it.
 
 ## Getting started
