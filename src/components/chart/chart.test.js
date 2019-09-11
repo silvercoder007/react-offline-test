@@ -55,8 +55,6 @@ describe("<chart />", () => {
   });
   it("should render the component", () => {
     const wrapper = shallow(<chart {...props} />);
-    console.log(wrapper.debug());
-    console.log(wrapper.props().data.generationmix);
     expect(wrapper).toHaveLength(1);
   });
   it("should have props", () => {
