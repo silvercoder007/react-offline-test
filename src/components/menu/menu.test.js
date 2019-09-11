@@ -3,7 +3,7 @@ import menu from './menu.jsx';
 import { configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 configure({ adapter: new Adapter() });
-import { shallow, mount } from 'enzyme';
+import { shallow } from 'enzyme';
 
 describe('<menu />', () => {
     let props;

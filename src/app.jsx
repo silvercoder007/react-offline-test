@@ -1,17 +1,14 @@
-import React from 'react';
-import Home from './pages/home.jsx';
-import useFetch from './helpers/fetch.jsx';
+import React from "react";
+import Home from "./pages/home.jsx";
+import useFetch from "./helpers/fetch.jsx";
 
 export function App() {
-const res = useFetch('https://api.carbonintensity.org.uk/generation', {});
+  const res = useFetch("https://api.carbonintensity.org.uk/generation", {});
   if (!res.response) {
-    return <div>Loading...</div>
+    return <div>Loading...</div>;
   }
 
-  console.log('res', res.response.data);
-  const data =  res.response.data;
+  const data = res.response.data;
 
-    return (
-     <Home data={ data }/>
-    )
+  return <Home data={data} />;
 }
