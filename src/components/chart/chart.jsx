@@ -19,7 +19,6 @@ return anotherArray;
 export default function Chart ({data}) {
 
     const { generationmix } = data;
-    console.log(data && generationmix);
     const dataArray = processData(generationmix && generationmix);
     return (
     <section>
