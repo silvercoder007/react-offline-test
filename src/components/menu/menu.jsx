@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './menu.scss';
 
 export default function Menu({menuItems}) {
@@ -21,3 +22,7 @@ export default function Menu({menuItems}) {
         </>
     );
 }
+
+Menu.propTypes = {
+  data: PropTypes.array
+};

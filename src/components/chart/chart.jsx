@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 import {
   LineChart,
   Line,
@@ -43,3 +44,7 @@ export default function Chart({ data }) {
     </section>
   );
 }
+
+Chart.propTypes = {
+  data: PropTypes.array
+};
