@@ -9,8 +9,9 @@ const res = useFetch('https://api.carbonintensity.org.uk/generation', {});
   }
 
   console.log('res', res.response.data);
+  const data =  res.response.data;
 
     return (
-     <Home />
+     <Home data={ data }/>
     )
 }
