@@ -11,21 +11,12 @@ import {
 } from "recharts";
 import style from "./chart.scss";
 
-function processData(array) {
-  const anotherArray = [];
-  const newData = array.map(fuel => {
-    const newFuelObject = {
-      name: fuel.fuel,
-      percentage: fuel.perc
-    };
-    anotherArray.push(newFuelObject);
-  });
-  return anotherArray;
-}
-
 export default function Chart({ data }) {
   const { generationmix } = data;
-  const dataArray = processData(generationmix && generationmix);
+  const dataArray = generationmix.map(fuel => ({
+    name: fuel.fuel,
+    percentage: fuel.perc
+  }));
   return (
     <section>
       <LineChart width={800} height={500} data={dataArray}>
